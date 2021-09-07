@@ -25,8 +25,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-3">
+        <div class="row mt-2">
+            <div class="col-md-3 dvSolMenu">
                 <i class="fab fa-twitter   iconTwitter"></i>
                 <ul>
                     <li class="icerikList">
@@ -92,10 +92,49 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-9">
-                @RenderBody()
+            <div class="col-md-9 dvIcerik">
+
+                <div id="menuAcKapat" class="btn  d-flex justify-content-end d-flex align-items-end mnuAcKapat">
+
+                    <ul>
+                        <li style="list-style-type: none;"><i class="far fa-hand-point-left" style=" color: rgb(29, 155, 240) !important;"></i></li>
+                    </ul>
+
+
+                </div>
+                <div>
+
+                    @RenderBody()
+                </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    $(document).ready(function () {
+
+
+        $("#menuAcKapat").click(function () {
+            $(".dvSolMenu").toggle();
+            if ($(".dvSolMenu").css("display") == "none") {
+
+                $(".dvIcerik").addClass("col-md-12");
+                $(".idIcon").addClass("far fa-hand-point-right");
+                $(".idIcon").removeClass("far fa-hand-point-left");
+            }
+
+            else {
+                $(".dvIcerik").removeClass("col-md-12");
+                $(".idIcon").addClass("far fa-hand-point-left");
+                $(".idIcon").removeClass("far fa-hand-point-right");
+
+            }
+
+        });
+
+    });
+
+
+</script>
