@@ -1,0 +1,50 @@
+﻿body {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.KayitIcerik{
+    background-color:#fff;
+    border-radius:20px;
+    border:1px solid #eeeeee;
+    padding:20px;
+}
+.iconTwitter {
+    color: rgb(29, 155, 240) !important;
+    margin: 0px auto;
+    font-size: 48px !important;
+}
+.loginBaslik {
+    font-family: inherit;
+    font-size: 32px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.inputStyle {
+    padding: 25px 10px;
+}
+.kayitOl{
+    margin:0px auto;
+    width:500px;
+  
+}
+
+.dogumTarih {
+    padding: 25px 20px;
+    border-color: #eeeeee !important;
+}
+
+.btnIleri {
+    background-color: rgb(29, 155, 240);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 50px;
+   
+}
+
+    .btnIleri:hover {
+        background-color: rgb(29, 155, 240);
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+        border-radius: 50px;
+    }

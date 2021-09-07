@@ -17,6 +17,11 @@ namespace UserPage.Controllers
         {
             return View();
         }
+
+        public IActionResult KayitOl()
+        {
+            return View();
+        }
         public IActionResult Kesfet()
         {
             return View();

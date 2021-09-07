@@ -1,0 +1,103 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Kayıt Ol</title>
+
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/css/KayitOl.css" rel="stylesheet" />
+
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/popper/umd/popper.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/bootstrap-select/js/i18n/defaults-tr_TR.js"></script>
+    <script src="~/lib/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="~/lib/bootstrap-table/bootstrap-table.js"></script>
+    <script src="~/lib/font-awesome/js/all.js"></script>
+    <script src="~/lib/font-awesome/js/fontawesome.js"></script>
+    <script src="~/lib/jquery-inputmask/inputmask.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="kayitOl">
+            <div class=" mt-5">
+
+                <div class=" KayitIcerik">
+                    <form>
+                        <div class="form-group ">
+                            <center>
+                                <i class="fab fa-twitter   iconTwitter"></i>
+                            </center>
+                            <br />
+                            <span class="loginBaslik">
+                                Hesabını oluştur
+                            </span>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-control inputStyle" type="text" name="text" id="" placeholder="İsim" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control inputStyle" type="number" name="number" id="Sifre" placeholder="Telefon" required min="0" minlength="10">
+                        </div>
+                        <a href="#">E-posta kullan</a>
+
+
+                        <div class="form-group">
+                            <input class="form-control inputStyle" type="email" name="email" id="Sifre" placeholder="E-Posta" required>
+                        </div>
+                        <a href="#">Telefon kullan</a>
+
+                        <br />
+                        <b class="mt-4">Doğum Tarihi</b>
+                        <p style="font-family:inherit">
+                            Bu, herkese açık olarak gösterilmeyecek. Bu hesap bir işletme, evcil hayvan veya başka bir şey için olsa bile kendi yaşını doğrulaman gerekir.
+                        </p>
+                       
+                            <div class="">
+                                <select class="dogumTarih mr-4" name="sayı" id="Ay">
+                                    <option value="ocak">Ocak</option>
+                                    <option value="subat">Şubat</option>
+                                    <option value="mart">Mart</option>
+                                    <option value="nisan">Nisan</option>
+                                    <option value="mayis">Mayıs</option>
+                                    <option value="haziran">Haziran</option>
+                                    <option value="temmuz">Temmuz</option>
+                                    <option value="agustos">Ağustos</option>
+                                    <option value="eylul">Eylül</option>
+                                    <option value="ekim">Ekim</option>
+                                    <option value="kasim">Kasım</option>
+                                    <option value="aralik">Aralık</option>
+                                </select>
+
+
+                                <input class="dogumTarih mr-5 " type="number" min="1" max="30" name="sayı" placeholder="Gün">
+                                <input class="dogumTarih  " type="number" min="1900" max="3000" name="sayı" placeholder="Yıl">
+                            </div>
+                       
+
+
+                        <div class="form-group mt-5">
+                            <a href="#" class="btn btn-block btnIleri">İleri</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
