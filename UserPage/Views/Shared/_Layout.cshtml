@@ -10,6 +10,7 @@
     <link href="~/lib/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
     <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
     <link href="~/lib/font-awesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/css/sayfa.css" rel="stylesheet" />
     <script src="~/lib/jquery/jquery.js"></script>
     <script src="~/lib/popper/umd/popper.js"></script>
     <script src="~/lib/bootstrap/js/bootstrap.js"></script>
@@ -23,8 +24,78 @@
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
 </head>
 <body>
-    <div>
-        @RenderBody()
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fab fa-twitter   iconTwitter"></i>
+                <ul>
+                    <li class="icerikList">
+                        <a href="/Home/Index">
+                            <span>
+                                <i class="fas fa-home"></i>
+                                Anasayfa
+                            </span>
+                        </a>
+                    </li>
+                    <li class="icerikList">
+                        <a href="/Home/Kesfet">
+                            <i class="fas fa-search"></i><span>
+                                Keşfet
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="icerikList">
+                        <a href="#">
+                            <i class="far fa-bell"></i> <span>
+                                Bildirim
+                            </span>
+                        </a>
+                    </li>
+                    <li class="icerikList">
+                        <a href="#">
+                            <i class="far fa-envelope"></i><span>
+                                Mesajlar
+                            </span>
+                        </a>
+                    </li>
+                    <li class="icerikList">
+                        <a href="#">
+                            <i class="fas fa-map-marker-alt"></i><span>
+                                Yer İşaretleri
+                            </span>
+                        </a>
+                    </li>
+                    <li class="icerikList">
+                        <a href="#">
+                            <i class="far fa-list-alt"></i><span>
+                                Listeler
+                            </span>
+                        </a>
+                    </li>
+                    <li class="icerikList">
+                        <a href="#">
+                            <i class="fas fa-user"></i><span>
+                                Profil
+                            </span>
+                        </a>
+                    </li>
+                    <li class="icerikList">
+                        <a href="#">
+                            <i class="far fa-comment-dots"></i> <span>
+                                Daha Fazla
+                            </span>
+                        </a>
+                    </li>
+                    <li class="buttonTweetleDis">
+                        <button class="buttonTweetle">Tweetle</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-9">
+                @RenderBody()
+            </div>
+        </div>
     </div>
 </body>
 </html>

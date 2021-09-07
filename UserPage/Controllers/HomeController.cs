@@ -17,5 +17,9 @@ namespace UserPage.Controllers
         {
             return View();
         }
+        public IActionResult Kesfet()
+        {
+            return View();
+        }
     }
 }

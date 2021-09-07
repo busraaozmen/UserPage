@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewData["Title"] = "Kesfet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/Kesfet.css" rel="stylesheet" />
+
+
+
+<div>
+    <img src="~/images/CovidImage.jpg" class="kesfetImage" />
+
+    <p class="gundemBaslik">İlgini çekebilecek gündemler</p>
+
+
+    <div class="row pl-3 pr-3">
+        <p class="ıcerikKesfet">Türkiye konumunda gündemde</p>
+
+        <button class="ikonKesfet mb-4 ml-auto" id="ikonKesfet" data-toggle="modal" data-target="#kesfetModal">
+
+            <i class="fas fa-ellipsis-h "></i>
+        </button>
+    </div>
+    <b>#OkullarAçılıyor</b>
+    <p>46.5 Tweet</p>
+  <hr />
+
+    <div class="row pl-3 pr-3">
+        <p class="ıcerikKesfet">Türkiye konumunda gündemde</p>
+
+        <button class="ikonKesfet mb-4 ml-auto" id="ikonKesfet" data-toggle="modal" data-target="#kesfetModal">
+
+            <i class="fas fa-ellipsis-h "></i>
+        </button>
+    </div>
+    <b>#KykYurt</b>
+    <p>37.5 Tweet</p>
+</div>
+
+
+
+
+
+
+<!-- Button trigger modal -->
+@*<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kesfetModal">
+
+    </button>*@
+
+<!-- Modal -->
+<div class="modal fade" id="kesfetModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row ">
+                    <button type="button" class="close ml-auto mr-3" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="row">
+                    <i class="far fa-frown-open ml-3 mr-3 mt-2"></i>
+                    <p> ilgimi Çekmiyor</p>
+                </div>
+                <div class="row">
+                    <i class="far fa-frown-open ml-3 mr-3 mt-2"></i>
+                    <p> Bu gündem başlığı zararlı veya spam içeriyor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $('#ikonKesfet').click(function () {
+        $('#kesfetModal').modal('show');
+    });
+</script>
