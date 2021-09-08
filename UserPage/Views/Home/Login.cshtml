@@ -30,7 +30,7 @@
     <div class="container icerik ">
         <div class="test">
             <div class="icerikLogin">
-                <form>
+                <form id="frmForm" action="/Home/index" method="post" onsubmit="return dogrula()">
                     <div class="form-group ">
                         <center>
                             <i class="fab fa-twitter   iconTwitter"></i>
@@ -42,28 +42,40 @@
                     </div>
 
                     <div class="form-group">
-                        <input class="form-control inputStyle" type="text" name="login" id="" placeholder="Telefon, E-posta veya Kullanıcı Adı" required>
+                        <input class="form-control inputStyle" type="text" id="userName" placeholder="Telefon, E-posta veya Kullanıcı Adı" required>
                     </div>
                     <div class="form-group">
-                        <input class="form-control inputStyle" type="password" name="password" id="Sifre" placeholder="Şifre" required>
+                        <input class="form-control inputStyle" type="password" id="password" placeholder="Şifre" required>
                     </div>
                     <div class="form-group">
-                        <a href="/Home/Index" class="btn btn-block btnLogin">Giriş Yap</a>
+                        <button id="btnGiris" type="submit" class="btn btn-block btnLogin">Giriş Yap</button>
                     </div>
-                    @*<div class="form-group">
-                            <input type="checkbox" id="Goster" class="custom-control-input" onclick="hideShow()" />
-                            <label class="custom-control-label" for="Goster">
-                                Şifreyi Gör
-                            </label>
-                        </div>*@
+
                     <center>
                         <a href="#" class="linkStyle ">Şifreni mi Unuttun?</a>
 
                         <a href="/Home/KayitOl" class="linkStyle">Twitter'a kaydol</a>
                     </center>
                 </form>
+
             </div>
         </div>
     </div>
 </body>
 </html>
+<script type="text/javascript">
+
+
+
+    document.getElementById("btnGiris").onclick = function () {
+        if ($('#userName') == null && $('#password') == null) {
+          
+            location.href = "/Home/index";
+        }
+        else {
+            location.href = "/Home/login";
+        }
+
+
+    };
+</script>
